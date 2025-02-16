@@ -27,6 +27,9 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <div className="w-screen text-white text-center text-4xl capitalize pt-5 ">
+          This is the first Next Js app
+        </div>
         {children}
       </body>
     </html>
