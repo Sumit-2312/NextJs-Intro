@@ -7,7 +7,9 @@ export default function CatchAllDynamicRoutes({ params }: { params: { routes?: s
             <h2 className="text-2xl font-semibold mt-4">What are Catch-All Dynamic Routes?</h2>
             <p className="mt-2 text-lg">
                 Catch-All Dynamic Routes match **any additional path segments** that are not explicitly defined in the routes folder. 
-                <br />For example, if you have a route `/products`, but you also want `/products/electronics/laptops`, you can use `[...routes]`.
+                <br />For example, if you have a route `/products`, but you also want `/products/electronics/laptops`, you can use `[...routes]`. <br />
+                This single square brackets do not handle the /product page we need to create the seprate page.tsx file and for other we will create [..routes] inside which we will handle any route after /product <br />
+                If you want to handle /product/* and /product all in on page.tsx file we can make the folders like /product/[...routes] and /product/page.tsx
             </p>
 
             <h2 className="text-2xl font-semibold mt-4">Captured Route Segments:</h2>
