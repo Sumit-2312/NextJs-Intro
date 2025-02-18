@@ -1,12 +1,8 @@
-
-export default function DynamicPages({params}: { params: { id: string }}){
-    const pageId = params.id;     // id here is the name of the folder you have mentioned in the square brackets
-
+export default function Routes({params}:{params:{id:string}}){
+   const route = params.id;
     return (
         <div>
-            <h1>
-                Hey there i am page with id as {pageId}
-            </h1>
+            You are on the page with id {route}
         </div>
     )
 }
